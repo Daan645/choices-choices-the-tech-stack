@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import "./tailwind.css";
+import "./style.css";
 
 export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
