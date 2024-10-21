@@ -1,12 +1,17 @@
+import Test from "./Test"; 
+import Header  from "./Header";
+
 export const meta = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Mediahuis" },
+    { name: "description", content: "Welkom bij mediahuis!" },
   ];
 };
 
 export default function Index() {
   return (
-<h1>Hello world</h1>    
-)}
-
+    <>
+     <Header /> 
+    </>
+  );
+}
