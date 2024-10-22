@@ -1,5 +1,6 @@
 import Test from "./Test"; 
 import Header  from "./Header";
+import Footer from "./Footer";
 
 export const meta = () => {
   return [
@@ -12,6 +13,7 @@ export default function Index() {
   return (
     <>
      <Header /> 
+     <Footer />
     </>
   );
 }
