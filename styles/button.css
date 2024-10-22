@@ -1,0 +1,73 @@
+a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+
+  a:hover {
+    scale: 0.95;
+    background-color: var(--hover);
+  }
+
+  a:hover svg {
+    transform: scale(1.2);
+  }
+ 
+  span,
+  svg {
+    background-color: transparent;
+  }
+
+  svg {
+    width: 1.5em;
+    height: auto;
+    fill: var(--light);
+    margin-right: 0.5em;
+    transition: transform 0.3s ease;
+  }
+
+  /* Media queries */
+  /* All .transparent classes will be active when the boolean transparent is set to true */
+  @media only screen and (max-width: 600px) {
+    a {
+      padding: 0.3em;
+    }
+
+    a.transparent {
+      background-color: transparent !important;
+    }
+
+    a.transparent:hover {
+      background-color: transparent;
+    }
+
+    .transparent span {
+      display: none;
+    }
+
+    .transparent svg {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    a {
+      padding: 0.1;
+    }
+
+    span {
+      font-size: 0.5em;
+    }
+
+    svg {
+      width: 1em;
+      margin-right: 0.1em;
+    }
+  }

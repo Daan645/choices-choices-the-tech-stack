@@ -1,4 +1,5 @@
 import "../../styles/header.css"; 
+import Button from "./Button";
 export default function Header() {
   return (
     <header className="header">
@@ -20,6 +21,13 @@ export default function Header() {
         </nav>
       </div>
       <div className="header-right">
+      <Button
+        label="Click Me"
+        href="https://example.com"
+        title="Example Link"
+        showSvg={true}
+        transparent={true}
+      />
       </div>
     </header>
   );
